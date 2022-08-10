@@ -1,13 +1,13 @@
 import { EnergyType } from '../Energy';
 import Archetype from './Archetype';
 
-export default class Ranger extends Archetype {
+export default class Mage extends Archetype {
   private _energyType: EnergyType;
   private static _createdArchetypeInstances = 0;
   constructor(name: string) {
     super(name);
-    this._energyType = 'mana';
-    Ranger._createdArchetypeInstances += 1;
+    this._energyType = 'stamina';
+    Mage._createdArchetypeInstances += 1;
   }
 
   get energyType(): EnergyType {
@@ -15,6 +15,6 @@ export default class Ranger extends Archetype {
   }
 
   static createdArchetypeInstances(): number {
-    return Ranger._createdArchetypeInstances;
+    return Mage._createdArchetypeInstances;
   }
 }

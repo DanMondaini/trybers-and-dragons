@@ -6,7 +6,7 @@ export default class Warrior extends Archetype {
   private static _createdArchetypeInstances = 0;
   constructor(name: string) {
     super(name);
-    this._energyType = 'mana';
+    this._energyType = 'stamina';
     Warrior._createdArchetypeInstances += 1;
   }
 
